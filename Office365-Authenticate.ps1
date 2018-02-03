@@ -4,4 +4,5 @@ $UserCredential = Get-Credential
 # Create and establish a session to Office365 in the cloud
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $OfficeURI -Credential $UserCredential -Authentication Basic
 Import-PSSession $Session
-Get-Mailbox
+Write-Output "Session established with $OfficeURI"
+Write-Output $Session | ComputerName
