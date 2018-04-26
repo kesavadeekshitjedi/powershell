@@ -1,0 +1,10 @@
+<purge>
+    <dir_retention>
+    <dir>C:\test1</dir>
+    <retention_days>1</retention_days>
+    </dir_retention>
+    <dir_retention>
+    <dir>C:\test2</dir>
+    <retention_days>3</retention_days>
+    </dir_retention>
+</purge>
