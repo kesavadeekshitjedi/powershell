@@ -1,6 +1,6 @@
 ﻿$OfficeURI = "https://outlook.office365.com/powershell-liveid"
 $AdminUserName = "daddepalli@robertmarktech.com"
-$AdminPassword = Get-Content "C:\github-repos-deek\powershell\office365.txt" | ConvertTo-SecureString
+$AdminPassword = Get-Content "C:\github-repos-deek\powershell\officecred.txt" | ConvertTo-SecureString
 $O365Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AdminUserName, $AdminPassword
 # Office 365 credential is established at this point.
 
