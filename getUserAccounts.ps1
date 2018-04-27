@@ -11,4 +11,4 @@ Import-Module MSOnline
 Connect-MSolService -Credential $MyO365Credential
 $O365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionURI $Office365URI -Credential $MyO365Credential -Authentication Basic -AllowRedirection
 Import-PSSession $O365Session
-Get-MSolUser
+Get-MsolUser -EnabledFilter EnabledOnly
